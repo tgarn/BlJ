@@ -13,6 +13,7 @@ const gameState = {
 }
 
 function preload () {
+	//loads the background images
 	this.load.image('background', 'Images/felt.jpg');
 	//loads the images for all of the cards
 	this.load.image('ace', 'CardImages/ace_of_clubs.png');
@@ -29,7 +30,7 @@ function preload () {
 	this.load.image('queen', 'CardImages/queen_of_clubs2.png');
 	this.load.image('king', 'CardImages/king_of_clubs2.png');
 	this.load.image('back', 'CardImages/red_joker.png');
-
+	// loads hit and stay buttons
 	this.load.image('hit' , 'Images/Hit.png');
 	this.load.image('stay', 'Images/Stay.png');
 
@@ -37,6 +38,7 @@ function preload () {
 
 
 function create () {
+	// adds background to the canvas
 	this.add.image(0, 0, 'background');
 
 
